@@ -105,6 +105,7 @@ static const int kStateKey;
     self.contentInset = state.priorInset;
     self.scrollIndicatorInsets = state.priorScrollIndicatorInsets;
     [UIView commitAnimations];
+    self.contentOffset = CGPointMake(0, 0); 
 }
 
 - (void)TPKeyboardAvoiding_updateContentInset {
